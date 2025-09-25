@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    int math, science;
+    printf("Enter your marks in math: ");
+    scanf("%d", &math);
+    printf("Enter your marks in science: ");
+    scanf("%d", &science);
+    if (math>=40 && science>=40){
+        printf("Congratulations you are eligible for 100 rupees");
+    }
+    else if(math>=40 && science<40){
+        printf("Congratulations you are eligible for 50 rupees");
+    }
+            else if(math<40 && science>=40){
+                printf("Congratulations you are eligible for 50 rupees");
+            }
+        
+    
+    else{
+        printf("You are not eligible");
+        return 0;
+    }
+    
+}
+
